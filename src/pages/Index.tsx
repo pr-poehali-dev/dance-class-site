@@ -8,10 +8,10 @@ export default function Index() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <div className="text-lg sm:text-2xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             <span className="text-white">LADY DANCE</span>
-            <br />
-            <span className="text-hot-pink text-lg font-normal">Анастасия Голубева</span>
+            <br className="hidden sm:block" />
+            <span className="text-hot-pink text-sm sm:text-lg font-normal ml-2 sm:ml-0">Анастасия Голубева</span>
           </div>
           <div className="hidden md:flex space-x-6">
             <a href="#about" className="hover:text-hot-pink transition-colors">О студии</a>
@@ -27,22 +27,22 @@ export default function Index() {
         <div className="absolute inset-0 dance-gradient opacity-10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-6xl md:text-8xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               <span className="block text-gradient">LADY</span>
               <span className="block text-white">DANCE</span>
             </h1>
-            <p className="text-xl md:text-2xl font-light mb-8 text-gray-300">
+            <p className="text-lg sm:text-xl md:text-2xl font-light mb-8 text-gray-300 px-4">
               Танцевальная студия для девушек в Люберцах
             </p>
-            <p className="text-lg mb-12 text-gray-400 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg mb-12 text-gray-400 max-w-2xl mx-auto px-4">
               Jazz-funk • Strip Dance • Vogue dance<br />
               Развиваем гибкость, изящность и уверенность в себе ⭐️
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-hot-pink hover:bg-deep-pink text-white px-8 py-4 text-lg font-semibold rounded-full" onClick={() => window.open('tel:+79299046364', '_self')}>
+            <div className="flex flex-col gap-4 justify-center px-4 max-w-sm mx-auto sm:max-w-none sm:flex-row">
+              <Button className="bg-hot-pink hover:bg-deep-pink text-white px-4 sm:px-8 py-4 text-sm sm:text-lg font-semibold rounded-full" onClick={() => window.open('tel:+79299046364', '_self')}>
                 Пробное занятие — 600 ₽
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg rounded-full" onClick={() => document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black px-4 sm:px-8 py-4 text-sm sm:text-lg rounded-full" onClick={() => document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })}>
                 Узнать расписание
               </Button>
             </div>
@@ -60,10 +60,10 @@ export default function Index() {
           />
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16 px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             <span className="text-gradient">Стили танца</span>
           </h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 max-w-6xl mx-auto px-4">
             <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-8 text-center hover:scale-105 transition-transform duration-300 shadow-2xl">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-hot-pink/20 flex items-center justify-center">
                 <Icon name="Music" size={32} className="text-hot-pink" />
@@ -106,11 +106,11 @@ export default function Index() {
       {/* Prices Section */}
       <section id="prices" className="py-20 bg-black">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16 px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             <span className="text-gradient">Стоимость занятий</span>
           </h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto px-4">
             {/* Trial Class */}
             <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-6 relative overflow-hidden shadow-xl">
               <div className="absolute top-0 right-0 bg-hot-pink text-white px-3 py-1 text-sm font-semibold">
@@ -153,7 +153,7 @@ export default function Index() {
             </Card>
 
             {/* 8 Classes Package */}
-            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-6 md:col-span-2 lg:col-span-1 relative shadow-xl">
+            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-6 sm:col-span-2 lg:col-span-1 relative shadow-xl">
               <div className="absolute top-0 right-0 bg-violet text-white px-3 py-1 text-sm font-semibold">
                 ПОПУЛЯРНЫЙ
               </div>
@@ -174,7 +174,7 @@ export default function Index() {
             </Card>
 
             {/* Conditions */}
-            <Card className="md:col-span-2 bg-white/95 backdrop-blur-sm border border-gray-200 p-6 shadow-xl">
+            <Card className="sm:col-span-2 lg:col-span-3 bg-white/95 backdrop-blur-sm border border-gray-200 p-6 shadow-xl">
               <h3 className="text-xl font-bold mb-4 text-black flex items-center">
                 <Icon name="Info" size={20} className="mr-2 text-hot-pink" />
                 Условия абонементов
@@ -191,28 +191,28 @@ export default function Index() {
       {/* Schedule Section */}
       <section id="schedule" className="py-20 bg-gradient-to-b from-black to-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16 px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             <span className="text-gradient">Расписание</span>
           </h2>
           
-          <div className="max-w-2xl mx-auto">
-            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-8 text-center shadow-2xl">
-              <div className="grid grid-cols-2 gap-8">
+          <div className="max-w-2xl mx-auto px-4">
+            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-4 sm:p-8 text-center shadow-2xl">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-4">Понедельник</h3>
-                  <div className="text-3xl font-bold text-hot-pink mb-2">21:00–22:00</div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">Понедельник</h3>
+                  <div className="text-2xl sm:text-3xl font-bold text-hot-pink mb-2">21:00–22:00</div>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-4">Среда</h3>
-                  <div className="text-3xl font-bold text-hot-pink mb-2">21:00–22:00</div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">Среда</h3>
+                  <div className="text-2xl sm:text-3xl font-bold text-hot-pink mb-2">21:00–22:00</div>
                 </div>
               </div>
-              <div className="mt-8 pt-6 border-t border-white/20">
-                <p className="text-lg text-gray-700 mb-4">
+              <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-white/20">
+                <p className="text-base sm:text-lg text-gray-700 mb-4">
                   <Icon name="Clock" size={20} className="inline mr-2 text-gold" />
                   Продолжительность: 60 минут
                 </p>
-                <p className="text-gray-600">
+                <p className="text-sm sm:text-base text-gray-600">
                   Форма одежды: любая удобная (спортивные штаны, леггинсы, шорты, кроссовки)
                 </p>
               </div>
@@ -224,19 +224,19 @@ export default function Index() {
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-black">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16 px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             <span className="text-gradient">Контакты</span>
           </h2>
           
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 px-4">
             <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-8 shadow-xl">
               <h3 className="text-2xl font-bold text-black mb-6 flex items-center">
                 <Icon name="MapPin" size={24} className="mr-3 text-hot-pink" />
                 Адрес студии
               </h3>
               <div className="space-y-3 text-gray-700">
-                <p className="text-xl">Люберцы, ул. Кирова, д. 12, корп. 1</p>
-                <p className="text-lg">2-й этаж, ЖК «Самоцветы»</p>
+                <p className="text-lg sm:text-xl">Люберцы, ул. Кирова, д. 12, корп. 1</p>
+                <p className="text-base sm:text-lg">2-й этаж, ЖК «Самоцветы»</p>
               </div>
             </Card>
 
@@ -252,23 +252,25 @@ export default function Index() {
                   className="w-24 h-24 rounded-full object-cover border-2 border-hot-pink/20 shadow-lg"
                 />
                 <div className="flex-1 text-center sm:text-left">
-                  <p className="text-xl text-black font-semibold mb-2">Анастасия Голубева</p>
-                  <p className="text-gray-700 mb-4">Профессиональный хореограф</p>
-                  <Button className="bg-hot-pink hover:bg-deep-pink text-white flex items-center mx-auto sm:mx-0" onClick={() => window.open('https://t.me/+79299046364', '_blank')}>
-                    <Icon name="MessageCircle" size={20} className="mr-2" />
-                    Написать в Telegram +7 929 904-63-64
+                  <p className="text-lg sm:text-xl text-black font-semibold mb-2">Анастасия Голубева</p>
+                  <p className="text-sm sm:text-base text-gray-700 mb-4">Профессиональный хореограф</p>
+                  <Button className="bg-hot-pink hover:bg-deep-pink text-white flex items-center mx-auto sm:mx-0 text-sm sm:text-base px-4 py-2" onClick={() => window.open('https://t.me/+79299046364', '_blank')}>
+                    <Icon name="MessageCircle" size={16} className="mr-2" />
+                    <span className="hidden sm:inline">Написать в Telegram +7 929 904-63-64</span>
+                    <span className="sm:hidden">Telegram +7 929 904-63-64</span>
                   </Button>
                 </div>
               </div>
             </Card>
           </div>
 
-          <div className="text-center mt-16">
-            <p className="text-2xl text-white mb-4">
+          <div className="text-center mt-16 px-4">
+            <p className="text-lg sm:text-2xl text-white mb-4">
               Приходите на пробное занятие 🌸
             </p>
-            <Button className="bg-gradient-to-r from-hot-pink to-purple hover:from-deep-pink hover:to-violet text-white px-12 py-4 text-xl font-semibold rounded-full" onClick={() => window.open('tel:+79299046364', '_self')}>
-              Записаться на пробное — 600 ₽ | +7 929 904-63-64
+            <Button className="bg-gradient-to-r from-hot-pink to-purple hover:from-deep-pink hover:to-violet text-white px-4 sm:px-12 py-4 text-sm sm:text-xl font-semibold rounded-full max-w-full" onClick={() => window.open('tel:+79299046364', '_self')}>
+              <span className="hidden sm:inline">Записаться на пробное — 600 ₽ | +7 929 904-63-64</span>
+              <span className="sm:hidden">Записаться — 600 ₽<br />+7 929 904-63-64</span>
             </Button>
           </div>
         </div>
