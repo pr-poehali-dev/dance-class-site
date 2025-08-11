@@ -119,8 +119,8 @@ export default function Index() {
               <h3 className="text-2xl font-bold mb-2 text-black">Пробное занятие</h3>
               <div className="text-4xl font-bold text-hot-pink mb-4">600 ₽</div>
               <p className="text-gray-700 mb-6">Познакомьтесь с нашими стилями танца</p>
-              <Button className="w-full bg-hot-pink hover:bg-deep-pink text-white">
-                Записаться
+              <Button className="w-full bg-hot-pink hover:bg-deep-pink text-white" onClick={() => window.open('tel:+79299046364', '_self')}>
+                Записаться +7 929 904-63-64
               </Button>
             </Card>
 
@@ -129,8 +129,8 @@ export default function Index() {
               <h3 className="text-2xl font-bold mb-2 text-black">Разовое посещение</h3>
               <div className="text-4xl font-bold text-purple mb-4">1100 ₽</div>
               <p className="text-gray-700 mb-6">Одно занятие без абонемента</p>
-              <Button variant="outline" className="w-full border-purple text-purple hover:bg-purple hover:text-white">
-                Выбрать
+              <Button variant="outline" className="w-full border-purple text-purple hover:bg-purple hover:text-white" onClick={() => window.open('tel:+79299046364', '_self')}>
+                Записаться +7 929 904-63-64
               </Button>
             </Card>
 
@@ -147,8 +147,8 @@ export default function Index() {
                   <p className="text-sm text-gray-600">2 переноса</p>
                 </div>
               </div>
-              <Button variant="outline" className="w-full border-gold text-gold hover:bg-gold hover:text-black">
-                Выбрать
+              <Button variant="outline" className="w-full border-gold text-gold hover:bg-gold hover:text-black" onClick={() => window.open('tel:+79299046364', '_self')}>
+                Записаться +7 929 904-63-64
               </Button>
             </Card>
 
@@ -168,8 +168,8 @@ export default function Index() {
                   <p className="text-sm text-gray-600">2 переноса</p>
                 </div>
               </div>
-              <Button className="w-full bg-violet hover:bg-purple text-white">
-                Выбрать
+              <Button className="w-full bg-violet hover:bg-purple text-white" onClick={() => window.open('tel:+79299046364', '_self')}>
+                Записаться +7 929 904-63-64
               </Button>
             </Card>
 
@@ -254,9 +254,9 @@ export default function Index() {
                 <div className="flex-1 text-center sm:text-left">
                   <p className="text-xl text-black font-semibold mb-2">Анастасия Голубева</p>
                   <p className="text-gray-700 mb-4">Профессиональный хореограф</p>
-                  <Button className="bg-hot-pink hover:bg-deep-pink text-white flex items-center mx-auto sm:mx-0">
+                  <Button className="bg-hot-pink hover:bg-deep-pink text-white flex items-center mx-auto sm:mx-0" onClick={() => window.open('https://t.me/+79299046364', '_blank')}>
                     <Icon name="MessageCircle" size={20} className="mr-2" />
-                    Написать в Telegram
+                    Написать в Telegram +7 929 904-63-64
                   </Button>
                 </div>
               </div>
@@ -267,8 +267,8 @@ export default function Index() {
             <p className="text-2xl text-white mb-4">
               Приходите на пробное занятие 🌸
             </p>
-            <Button className="bg-gradient-to-r from-hot-pink to-purple hover:from-deep-pink hover:to-violet text-white px-12 py-4 text-xl font-semibold rounded-full">
-              Записаться на пробное — 600 ₽
+            <Button className="bg-gradient-to-r from-hot-pink to-purple hover:from-deep-pink hover:to-violet text-white px-12 py-4 text-xl font-semibold rounded-full" onClick={() => window.open('tel:+79299046364', '_self')}>
+              Записаться на пробное — 600 ₽ | +7 929 904-63-64
             </Button>
           </div>
         </div>
