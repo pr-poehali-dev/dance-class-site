@@ -60,32 +60,32 @@ export default function Index() {
             <span className="text-gradient">Стили танца</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="bg-gradient-to-b from-purple/20 to-black/50 border border-purple/30 p-8 text-center hover:scale-105 transition-transform duration-300">
+            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-8 text-center hover:scale-105 transition-transform duration-300 shadow-2xl">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-hot-pink/20 flex items-center justify-center">
                 <Icon name="Music" size={32} className="text-hot-pink" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Jazz-funk</h3>
-              <p className="text-gray-300 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-black">Jazz-funk</h3>
+              <p className="text-gray-700 leading-relaxed">
                 Манерное исполнение, чёткие движения и микс элементов из разных танцевальных стилей
               </p>
             </Card>
 
-            <Card className="bg-gradient-to-b from-hot-pink/20 to-black/50 border border-hot-pink/30 p-8 text-center hover:scale-105 transition-transform duration-300">
+            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-8 text-center hover:scale-105 transition-transform duration-300 shadow-2xl">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-purple/20 flex items-center justify-center">
                 <Icon name="Heart" size={32} className="text-purple" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Strip Dance</h3>
-              <p className="text-gray-300 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-black">Strip Dance</h3>
+              <p className="text-gray-700 leading-relaxed">
                 Танцы для девушек, нацеленные на развитие гибкости, изящности и повышения уверенности в себе
               </p>
             </Card>
 
-            <Card className="bg-gradient-to-b from-gold/20 to-black/50 border border-gold/30 p-8 text-center hover:scale-105 transition-transform duration-300">
+            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-8 text-center hover:scale-105 transition-transform duration-300 shadow-2xl">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gold/20 flex items-center justify-center">
                 <Icon name="Crown" size={32} className="text-gold" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Vogue Dance</h3>
-              <p className="text-gray-300 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-black">Vogue Dance</h3>
+              <p className="text-gray-700 leading-relaxed">
                 Модное и гламурное направление, которое сочетает в себе танец, позирование и дефиле одновременно
               </p>
             </Card>
@@ -108,39 +108,39 @@ export default function Index() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {/* Trial Class */}
-            <Card className="bg-gradient-to-br from-hot-pink/10 to-purple/10 border border-hot-pink/30 p-6 relative overflow-hidden">
+            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-6 relative overflow-hidden shadow-xl">
               <div className="absolute top-0 right-0 bg-hot-pink text-white px-3 py-1 text-sm font-semibold">
                 ПРОБНОЕ
               </div>
-              <h3 className="text-2xl font-bold mb-2 text-white">Пробное занятие</h3>
+              <h3 className="text-2xl font-bold mb-2 text-black">Пробное занятие</h3>
               <div className="text-4xl font-bold text-hot-pink mb-4">600 ₽</div>
-              <p className="text-gray-300 mb-6">Познакомьтесь с нашими стилями танца</p>
+              <p className="text-gray-700 mb-6">Познакомьтесь с нашими стилями танца</p>
               <Button className="w-full bg-hot-pink hover:bg-deep-pink text-white">
                 Записаться
               </Button>
             </Card>
 
             {/* Single Visit */}
-            <Card className="bg-gradient-to-br from-purple/10 to-violet/10 border border-purple/30 p-6">
-              <h3 className="text-2xl font-bold mb-2 text-white">Разовое посещение</h3>
+            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-6 shadow-xl">
+              <h3 className="text-2xl font-bold mb-2 text-black">Разовое посещение</h3>
               <div className="text-4xl font-bold text-purple mb-4">1100 ₽</div>
-              <p className="text-gray-300 mb-6">Одно занятие без абонемента</p>
+              <p className="text-gray-700 mb-6">Одно занятие без абонемента</p>
               <Button variant="outline" className="w-full border-purple text-purple hover:bg-purple hover:text-white">
                 Выбрать
               </Button>
             </Card>
 
             {/* 4 Classes Package */}
-            <Card className="bg-gradient-to-br from-gold/10 to-warm-gold/10 border border-gold/30 p-6">
-              <h3 className="text-xl font-bold mb-2 text-white">Абонемент 4 занятия</h3>
+            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-6 shadow-xl">
+              <h3 className="text-xl font-bold mb-2 text-black">Абонемент 4 занятия</h3>
               <div className="space-y-3 mb-6">
                 <div>
                   <div className="text-2xl font-bold text-gold">3800 ₽</div>
-                  <p className="text-sm text-gray-400">без переноса</p>
+                  <p className="text-sm text-gray-600">без переноса</p>
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-gold">4000 ₽</div>
-                  <p className="text-sm text-gray-400">2 переноса</p>
+                  <p className="text-sm text-gray-600">2 переноса</p>
                 </div>
               </div>
               <Button variant="outline" className="w-full border-gold text-gold hover:bg-gold hover:text-black">
@@ -149,19 +149,19 @@ export default function Index() {
             </Card>
 
             {/* 8 Classes Package */}
-            <Card className="bg-gradient-to-br from-violet/10 to-purple/10 border border-violet/30 p-6 md:col-span-2 lg:col-span-1 relative">
+            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-6 md:col-span-2 lg:col-span-1 relative shadow-xl">
               <div className="absolute top-0 right-0 bg-violet text-white px-3 py-1 text-sm font-semibold">
                 ПОПУЛЯРНЫЙ
               </div>
-              <h3 className="text-xl font-bold mb-2 text-white">Абонемент 8 занятий</h3>
+              <h3 className="text-xl font-bold mb-2 text-black">Абонемент 8 занятий</h3>
               <div className="space-y-3 mb-6">
                 <div>
                   <div className="text-2xl font-bold text-violet">6800 ₽</div>
-                  <p className="text-sm text-gray-400">без переноса</p>
+                  <p className="text-sm text-gray-600">без переноса</p>
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-violet">7200 ₽</div>
-                  <p className="text-sm text-gray-400">2 переноса</p>
+                  <p className="text-sm text-gray-600">2 переноса</p>
                 </div>
               </div>
               <Button className="w-full bg-violet hover:bg-purple text-white">
@@ -170,14 +170,14 @@ export default function Index() {
             </Card>
 
             {/* Conditions */}
-            <Card className="md:col-span-2 bg-gradient-to-r from-gray-900/50 to-black/50 border border-gray-700 p-6">
-              <h3 className="text-xl font-bold mb-4 text-white flex items-center">
+            <Card className="md:col-span-2 bg-white/95 backdrop-blur-sm border border-gray-200 p-6 shadow-xl">
+              <h3 className="text-xl font-bold mb-4 text-black flex items-center">
                 <Icon name="Info" size={20} className="mr-2 text-hot-pink" />
                 Условия абонементов
               </h3>
-              <div className="space-y-3 text-gray-300">
-                <p><strong className="text-white">Без переноса:</strong> не позволяет переносить занятия, даже по болезни</p>
-                <p><strong className="text-white">С переносом:</strong> дает возможность пропустить занятия по любой причине. Пропущенные занятия переносятся на следующий месяц</p>
+              <div className="space-y-3 text-gray-700">
+                <p><strong className="text-black">Без переноса:</strong> не позволяет переносить занятия, даже по болезни</p>
+                <p><strong className="text-black">С переносом:</strong> дает возможность пропустить занятия по любой причине. Пропущенные занятия переносятся на следующий месяц</p>
               </div>
             </Card>
           </div>
@@ -192,23 +192,23 @@ export default function Index() {
           </h2>
           
           <div className="max-w-2xl mx-auto">
-            <Card className="bg-gradient-to-r from-hot-pink/10 to-purple/10 border border-hot-pink/30 p-8 text-center">
+            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-8 text-center shadow-2xl">
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Понедельник</h3>
+                  <h3 className="text-2xl font-bold text-black mb-4">Понедельник</h3>
                   <div className="text-3xl font-bold text-hot-pink mb-2">21:00–22:00</div>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Среда</h3>
+                  <h3 className="text-2xl font-bold text-black mb-4">Среда</h3>
                   <div className="text-3xl font-bold text-hot-pink mb-2">21:00–22:00</div>
                 </div>
               </div>
               <div className="mt-8 pt-6 border-t border-white/20">
-                <p className="text-lg text-gray-300 mb-4">
+                <p className="text-lg text-gray-700 mb-4">
                   <Icon name="Clock" size={20} className="inline mr-2 text-gold" />
                   Продолжительность: 60 минут
                 </p>
-                <p className="text-gray-400">
+                <p className="text-gray-600">
                   Форма одежды: любая удобная (спортивные штаны, леггинсы, шорты, кроссовки)
                 </p>
               </div>
@@ -225,25 +225,25 @@ export default function Index() {
           </h2>
           
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-            <Card className="bg-gradient-to-br from-purple/10 to-hot-pink/10 border border-purple/30 p-8">
-              <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-8 shadow-xl">
+              <h3 className="text-2xl font-bold text-black mb-6 flex items-center">
                 <Icon name="MapPin" size={24} className="mr-3 text-hot-pink" />
                 Адрес студии
               </h3>
-              <div className="space-y-3 text-gray-300">
+              <div className="space-y-3 text-gray-700">
                 <p className="text-xl">Люберцы, ул. Кирова, д. 12, корп. 1</p>
                 <p className="text-lg">2-й этаж, ЖК «Самоцветы»</p>
               </div>
             </Card>
 
-            <Card className="bg-gradient-to-br from-gold/10 to-purple/10 border border-gold/30 p-8">
-              <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+            <Card className="bg-white/95 backdrop-blur-sm border border-gray-200 p-8 shadow-xl">
+              <h3 className="text-2xl font-bold text-black mb-6 flex items-center">
                 <Icon name="User" size={24} className="mr-3 text-gold" />
                 Преподаватель
               </h3>
               <div className="space-y-4">
-                <p className="text-xl text-white">Анастасия Голубева</p>
-                <p className="text-gray-300">Профессиональный хореограф и танцовщица</p>
+                <p className="text-xl text-black">Анастасия Голубева</p>
+                <p className="text-gray-700">Профессиональный хореограф и танцовщица</p>
                 <div className="pt-4">
                   <Button className="bg-hot-pink hover:bg-deep-pink text-white flex items-center">
                     <Icon name="MessageCircle" size={20} className="mr-2" />
