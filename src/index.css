@@ -99,3 +99,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+@layer components {
+  .dance-gradient {
+    background: linear-gradient(135deg, #ff1493 0%, #8a2be2 50%, #ffd700 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #ff1493, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
