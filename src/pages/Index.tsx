@@ -39,10 +39,10 @@ export default function Index() {
               Развиваем гибкость, изящность и уверенность в себе ⭐️
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-hot-pink hover:bg-deep-pink text-white px-8 py-4 text-lg font-semibold rounded-full">
+              <Button className="bg-hot-pink hover:bg-deep-pink text-white px-8 py-4 text-lg font-semibold rounded-full" onClick={() => window.open('tel:+79299046364', '_self')}>
                 Пробное занятие — 600 ₽
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg rounded-full">
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg rounded-full" onClick={() => document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })}>
                 Узнать расписание
               </Button>
             </div>
