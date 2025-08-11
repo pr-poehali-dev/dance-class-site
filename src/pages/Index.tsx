@@ -26,44 +26,40 @@ export default function Index() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-900">
         <div className="absolute inset-0 dance-gradient opacity-10"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto">
-            {/* Text Content */}
-            <div className="text-center lg:text-left lg:flex-1">
-              <h1 className="text-6xl md:text-8xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                <span className="block text-gradient">LADY</span>
-                <span className="block text-white">DANCE</span>
-              </h1>
-              <p className="text-xl md:text-2xl font-light mb-8 text-gray-300">
-                Танцевальная студия для девушек в Люберцах
-              </p>
-              <p className="text-lg mb-12 text-gray-400 max-w-2xl lg:max-w-none">
-                Jazz-funk • Strip Dance • Vogue dance<br />
-                Развиваем гибкость, изящность и уверенность в себе ⭐️
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button className="bg-hot-pink hover:bg-deep-pink text-white px-8 py-4 text-lg font-semibold rounded-full">
-                  Пробное занятие — 600 ₽
-                </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg rounded-full">
-                  Узнать расписание
-                </Button>
-              </div>
-            </div>
-            {/* Logo Image */}
-            <div className="lg:flex-1 lg:flex lg:justify-end mt-12 lg:mt-0">
-              <img
-                src="https://cdn.poehali.dev/files/b9d2ad5a-4a2f-47cc-94f1-b2e0ac2941b8.jpg"
-                alt="Lady Dance Studio Logo"
-                className="w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-2xl shadow-2xl border-4 border-hot-pink/20"
-              />
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              <span className="block text-gradient">LADY</span>
+              <span className="block text-white">DANCE</span>
+            </h1>
+            <p className="text-xl md:text-2xl font-light mb-8 text-gray-300">
+              Танцевальная студия для девушек в Люберцах
+            </p>
+            <p className="text-lg mb-12 text-gray-400 max-w-2xl mx-auto">
+              Jazz-funk • Strip Dance • Vogue dance<br />
+              Развиваем гибкость, изящность и уверенность в себе ⭐️
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="bg-hot-pink hover:bg-deep-pink text-white px-8 py-4 text-lg font-semibold rounded-full">
+                Пробное занятие — 600 ₽
+              </Button>
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg rounded-full">
+                Узнать расписание
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Styles Section */}
-      <section id="about" className="py-20 bg-gradient-to-b from-black to-gray-900">
-        <div className="container mx-auto px-4">
+      <section id="about" className="py-20 bg-gradient-to-b from-black to-gray-900 relative">
+        <div className="absolute inset-0 opacity-10">
+          <img
+            src="https://cdn.poehali.dev/files/b9d2ad5a-4a2f-47cc-94f1-b2e0ac2941b8.jpg"
+            alt="Lady Dance Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             <span className="text-gradient">Стили танца</span>
           </h2>
@@ -257,7 +253,7 @@ export default function Index() {
                 />
                 <div className="flex-1 text-center sm:text-left">
                   <p className="text-xl text-black font-semibold mb-2">Анастасия Голубева</p>
-                  <p className="text-gray-700 mb-4">Профессиональный хореограф и танцовщица</p>
+                  <p className="text-gray-700 mb-4">Профессиональный хореограф</p>
                   <Button className="bg-hot-pink hover:bg-deep-pink text-white flex items-center mx-auto sm:mx-0">
                     <Icon name="MessageCircle" size={20} className="mr-2" />
                     Написать в Telegram
